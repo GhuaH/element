@@ -4,7 +4,7 @@
       v-show="showPopper"
       class="el-autocomplete-suggestion el-popper"
       :class="{ 'is-loading': !parent.hideLoading && parent.loading }"
-      :style="{ width: dropdownWidth }"
+      :style="{ 'min-width': dropdownWidth, 'max-width': '1920px'}"
       role="region">
       <el-scrollbar
         tag="ul"
